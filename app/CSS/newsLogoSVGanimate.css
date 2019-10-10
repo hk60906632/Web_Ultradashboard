@@ -1,0 +1,44 @@
+
+@keyframes play150 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -52500px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 2500ms;
+  animation-timing-function: steps(150);
+  animation-fill-mode: forwards;
+  width: 350px;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+.shapeshifter.play {
+  animation-name: play150;
+}
+
+
+@keyframes play132 {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -52800px 0px;
+    }
+}
+
+.tech-shapeshifter {
+    animation-duration: 2200ms;
+    animation-timing-function: steps(132);
+    animation-fill-mode: forwards;
+    width: 400px;
+    height: 457px;
+    background-repeat: no-repeat;
+}
+
+    .tech-shapeshifter.tech-play {
+        animation-name: play132;
+    }

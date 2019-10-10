@@ -1,0 +1,170 @@
+#main_container {
+    height: 1000px;
+    background: url("photo/background6.jpg") no-repeat center center fixed;
+    overflow: hidden;
+    background-size: cover;
+    margin-top: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+#toDoList{
+  height: 100vh;
+  width: 30%;
+  margin: 0;
+  padding: 0 3rem;
+}
+
+footer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background: url("./photo/background10.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+
+#footerThanks{
+  width: 400px;
+}
+
+
+/*The clock wellcom massage date and weather*/
+
+#main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    height: 1000px;
+    margin: 0;
+    padding: 0 3rem;
+    color: white;
+    font-family: 'Special Elite', cursive;
+}
+
+ 
+
+#clock_container{
+  margin-top: 2px;
+}
+
+#clock, #weekday, #currentDate, #temp{
+  padding-top: 10px;
+}
+
+#minutely, #location{
+  padding-top: 10px;
+}
+
+/*the side css animated navigation bar*/
+
+#logo_navagation{
+    top: 40px;
+    left: 50px;
+    width: 5%;
+    height: 1000px;
+}
+
+  
+  #logo_navagation ul{
+    transform: translate(5%, 5%);
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  #logo_navagation ul li {
+    list-style: none;
+  }
+  
+  #logo_navagation ul li a {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 56px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(204,204,204,.5);
+    text-decoration: none;
+    color: #262626;
+    margin: 20px 10px;
+    transition: .5s;
+  }
+  #logo_navagation ul li a:hover {
+    box-shadow: inset 60px 0 0 0.01px rgba(255, 220, 0, 0.8);
+  }
+  
+  
+  #logo_navagation ul li a span {
+    position: absolute;
+    transition: transform .5s;
+  }
+  
+  #logo_navagation ul li a span:nth-child(1),
+  #logo_navagation ul li a span:nth-child(3){
+    width: 100%;
+    height: 2px;
+    background: rgba(38, 38, 38, 0.6);
+  }
+  
+  #logo_navagation ul li a span:nth-child(1){
+    top: 0;
+    left: 0;
+    transform-origin: right;
+  }
+  
+  #logo_navagation ul li a:hover span:nth-child(1){
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+  }
+  
+  #logo_navagation ul li a span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+  }
+  
+  #logo_navagation ul li a:hover span:nth-child(3){
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .5s;
+  }
+  
+  #logo_navagation ul li a span:nth-child(2),
+  #logo_navagation ul li a span:nth-child(4){
+    width: 2px;
+    height: 100%;
+    background: rgba(38, 38, 38, 0.6);
+  }
+  
+  #logo_navagation ul li a span:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+  
+  #logo_navagation ul li a:hover span:nth-child(2){
+    transform: scale(1);
+    transform-origin: top;
+    transition: .5s;
+  }
+  
+  #logo_navagation ul li a span:nth-child(4){
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+  
+  #logo_navagation ul li a:hover span:nth-child(4){
+    transform: scale(1);
+    transform-origin: top;
+    transition: .5s;
+  }
+  
